@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politica de Privacidad - OnStartUp</title>
+  <meta name="description" content="Politica de privacidad de OnStartUp LLC. Informacion sobre como recopilamos, usamos y protegemos tus datos personales.">
+  <meta property="og:title" content="Politica de Privacidad - OnStartUp">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.onstarter.com/privacy-policy/">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .policy-hero {
+      padding: 160px 0 60px;
+      background: linear-gradient(165deg, #fff 0%, #fff5f0 40%, #ffe8de 70%, #ffd6c7 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .policy-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,61,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .policy-hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .policy-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .policy-hero h1 em {
+      font-style: normal;
+      position: relative;
+      display: inline-block;
+    }
+
+    .policy-hero h1 em::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: -4px;
+      width: calc(100% + 8px);
+      height: 10px;
+      background: var(--yellow);
+      z-index: -1;
+      border-radius: 4px;
+      transform: skewX(-2deg);
+    }
+
+    .policy-meta {
+      display: inline-flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .policy-meta span {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .policy-meta strong {
+      color: var(--dark-gray);
+    }
+
+    .policy-content {
+      padding: 60px 0 80px;
+    }
+
+    .policy-content .container {
+      max-width: 800px;
+    }
+
+    .policy-nav {
+      background: var(--light-gray);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 48px;
+    }
+
+    .policy-nav h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--dark-gray);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .policy-nav ol {
+      list-style: decimal;
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .policy-nav ol li {
+      font-size: 0.95rem;
+    }
+
+    .policy-nav ol li a {
+      color: var(--orange);
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+
+    .policy-nav ol li a:hover {
+      opacity: 0.7;
+    }
+
+    .policy-section {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .policy-section h2 .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255,107,61,0.1);
+      color: var(--orange);
+      font-size: 0.85rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .policy-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .policy-section ul {
+      margin: 12px 0 16px;
+      padding-left: 0;
+    }
+
+    .policy-section ul li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .policy-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--orange);
+      opacity: 0.2;
+    }
+
+    .policy-section ul li::after {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 19px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+
+    .policy-contact-card {
+      background: linear-gradient(135deg, var(--orange), #ff8f3d);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      color: var(--white);
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .policy-contact-card h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .policy-contact-card p {
+      opacity: 0.9;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: var(--white);
+    }
+
+    .policy-contact-card .contact-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .policy-contact-card .contact-link {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    .policy-contact-card .contact-link:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    @media (max-width: 768px) {
+      .policy-nav ol {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <a href="../" class="logo"><img src="../images/logo.png" alt="OnStartUp" class="logo-img"></a>
+    <div class="nav-links" id="navLinks">
+      <a href="../">Inicio</a>
+      <a href="../#planes">Precios</a>
+      <a href="../#preguntas">Preguntas frecuentes</a>
+      <a href="mailto:info@onstarter.com" class="btn-contact">Contacto</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="policy-hero">
+  <div class="container">
+    <h1><em>Politica de Privacidad</em></h1>
+    <div class="policy-meta">
+      <span>Publicado: <strong>1 de abril, 2024</strong></span>
+      <span>Actualizado: <strong>2 de abril, 2024</strong></span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="policy-content">
+  <div class="container">
+
+    <!-- Table of Contents -->
+    <div class="policy-nav">
+      <h3>Indice</h3>
+      <ol>
+        <li><a href="#intro">Introduccion</a></li>
+        <li><a href="#info-recopilada">Informacion que recopilamos</a></li>
+        <li><a href="#uso-info">Como utilizamos su informacion</a></li>
+        <li><a href="#divulgacion">Divulgacion de su informacion</a></li>
+        <li><a href="#cookies">Cookies y tecnologias de seguimiento</a></li>
+        <li><a href="#seguridad">Seguridad de datos</a></li>
+        <li><a href="#derechos">Sus derechos de privacidad</a></li>
+        <li><a href="#cambios">Cambios en esta politica</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ol>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="policy-section" id="intro">
+      <h2><span class="section-num">1</span> Introduccion</h2>
+      <p>En OnStartUp LLC ("nosotros", "nos", "nuestro"), respetamos su privacidad y estamos comprometidos a protegerla a traves de nuestro cumplimiento de esta politica.</p>
+      <p>Esta politica de privacidad describe los tipos de informacion que podemos recopilar de usted o que usted puede proporcionar cuando visita nuestro sitio web <strong>www.onstarter.com</strong> y nuestras practicas para recopilar, usar, mantener, proteger y divulgar esa informacion.</p>
+      <p>Le recomendamos leer esta politica detenidamente para comprender nuestras politicas y practicas con respecto a su informacion. Al acceder o utilizar nuestro sitio web, usted acepta las practicas descritas en esta politica de privacidad.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="policy-section" id="info-recopilada">
+      <h2><span class="section-num">2</span> Informacion que recopilamos</h2>
+      <p>Esta politica se aplica a la informacion recopilada a traves de los siguientes medios:</p>
+      <ul>
+        <li>Nuestro sitio web y cualquier pagina, funcionalidad o contenido accesible a traves del mismo.</li>
+        <li>Correos electronicos, mensajes de texto y otras comunicaciones electronicas entre usted y nuestro sitio web.</li>
+        <li>Aplicaciones moviles y de escritorio descargadas desde nuestro sitio web, que proporcionan interaccion dedicada.</li>
+        <li>Interacciones con publicidad y aplicaciones de terceros vinculadas a esta politica.</li>
+      </ul>
+      <p>Los tipos de informacion que podemos recopilar incluyen:</p>
+      <ul>
+        <li><strong>Informacion de identificacion personal:</strong> nombre, direccion de correo electronico, numero de telefono, direccion postal y cualquier otra informacion que usted proporcione voluntariamente.</li>
+        <li><strong>Informacion de uso:</strong> detalles sobre sus visitas a nuestro sitio web, incluidas las paginas visitadas, los recursos utilizados y los datos de trafico.</li>
+        <li><strong>Informacion del dispositivo:</strong> datos sobre su equipo, conexion a internet, navegador, sistema operativo y direccion IP.</li>
+      </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="policy-section" id="uso-info">
+      <h2><span class="section-num">3</span> Como utilizamos su informacion</h2>
+      <p>Utilizamos la informacion que recopilamos sobre usted o que usted nos proporciona para los siguientes fines:</p>
+      <ul>
+        <li>Presentar nuestro sitio web y su contenido de manera adecuada y personalizada.</li>
+        <li>Proporcionarle informacion, productos o servicios que nos solicite.</li>
+        <li>Cumplir con cualquier proposito para el cual usted proporcione la informacion.</li>
+        <li>Notificarle sobre cambios en nuestro sitio web o cualquier modificacion en los servicios que ofrecemos.</li>
+        <li>Mejorar nuestros servicios, contenido y la experiencia general del usuario en nuestra plataforma.</li>
+        <li>Responder a sus consultas, solicitudes o comentarios de manera oportuna.</li>
+        <li>Enviarle comunicaciones comerciales, siempre que usted haya dado su consentimiento previo.</li>
+      </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="policy-section" id="divulgacion">
+      <h2><span class="section-num">4</span> Divulgacion de su informacion</h2>
+      <p><strong>No vendemos, alquilamos ni compartimos informacion personal con terceros para sus fines promocionales.</strong></p>
+      <p>Podemos divulgar informacion personal que recopilamos o que usted proporciona en las siguientes circunstancias:</p>
+      <ul>
+        <li><strong>Proveedores de servicios:</strong> a terceros que nos ayudan a operar nuestro sitio web, llevar a cabo nuestro negocio o brindarle servicios, siempre que dichas partes acuerden mantener la confidencialidad de esta informacion.</li>
+        <li><strong>Cumplimiento legal:</strong> para cumplir con cualquier orden judicial, ley o proceso legal, incluyendo responder a solicitudes gubernamentales o regulatorias.</li>
+        <li><strong>Proteccion de derechos:</strong> para hacer valer nuestros derechos derivados de cualquier contrato celebrado entre usted y nosotros, o para proteger la seguridad de nuestros usuarios.</li>
+        <li><strong>Transferencia empresarial:</strong> a un comprador u otro sucesor en caso de fusion, adquisicion o venta de activos, donde la informacion personal de los usuarios se encuentre entre los activos transferidos.</li>
+      </ul>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="policy-section" id="cookies">
+      <h2><span class="section-num">5</span> Cookies y tecnologias de seguimiento</h2>
+      <p>Nuestro sitio web puede utilizar cookies y tecnologias de seguimiento similares para mejorar su experiencia de navegacion. Las cookies son pequenos archivos de datos almacenados en su dispositivo que nos permiten reconocer su navegador y capturar cierta informacion.</p>
+      <p>Utilizamos los siguientes tipos de cookies:</p>
+      <ul>
+        <li><strong>Cookies esenciales:</strong> necesarias para el funcionamiento basico del sitio web y que no pueden desactivarse.</li>
+        <li><strong>Cookies analiticas:</strong> nos permiten comprender como los visitantes interactuan con nuestro sitio web, recopilando informacion de forma anonima.</li>
+        <li><strong>Cookies de preferencias:</strong> permiten que el sitio web recuerde las elecciones que usted realiza para ofrecerle funciones mejoradas y personalizadas.</li>
+      </ul>
+      <p>Usted puede configurar su navegador para rechazar todas o algunas cookies, o para que le avise cuando se envien cookies. Sin embargo, si desactiva o rechaza las cookies, tenga en cuenta que algunas funciones del sitio web podrian no estar disponibles o funcionar correctamente.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="policy-section" id="seguridad">
+      <h2><span class="section-num">6</span> Seguridad de datos</h2>
+      <p>Hemos implementado medidas de seguridad tecnicas y organizativas disenadas para proteger su informacion personal contra perdida accidental, acceso no autorizado, uso, alteracion y divulgacion.</p>
+      <p>Todas las transacciones de pago se procesan a traves de plataformas de pago seguras de terceros (como Stripe) y no almacenamos informacion de tarjetas de credito en nuestros servidores.</p>
+      <p>Sin embargo, la transmision de informacion a traves de internet no es completamente segura. Aunque hacemos nuestro mejor esfuerzo por proteger su informacion personal, no podemos garantizar la seguridad absoluta de los datos transmitidos a nuestro sitio web.</p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="policy-section" id="derechos">
+      <h2><span class="section-num">7</span> Sus derechos de privacidad</h2>
+      <p>Usted tiene los siguientes derechos en relacion con su informacion personal:</p>
+      <ul>
+        <li><strong>Derecho de acceso:</strong> puede solicitar acceso a sus datos personales y recibir una copia de la informacion personal que mantenemos sobre usted.</li>
+        <li><strong>Derecho de rectificacion:</strong> puede solicitar la correccion de datos personales inexactos o incompletos que mantenemos sobre usted.</li>
+        <li><strong>Derecho de eliminacion:</strong> puede solicitar la eliminacion de su informacion personal de nuestros registros, sujeto a ciertas excepciones legales.</li>
+        <li><strong>Derecho de oposicion:</strong> puede oponerse al procesamiento de sus datos personales en determinadas circunstancias.</li>
+        <li><strong>Derecho de portabilidad:</strong> puede solicitar la transferencia de sus datos personales a otro proveedor de servicios en un formato estructurado y legible por maquina.</li>
+      </ul>
+      <p>Para ejercer cualquiera de estos derechos, pongase en contacto con nosotros utilizando la informacion proporcionada en la seccion de contacto al final de esta politica.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="policy-section" id="cambios">
+      <h2><span class="section-num">8</span> Cambios en esta politica</h2>
+      <p>Nos reservamos el derecho de actualizar esta politica de privacidad en cualquier momento. Publicaremos cualquier cambio en esta pagina con la fecha de actualizacion correspondiente.</p>
+      <p>Le recomendamos revisar esta politica periodicamente para estar informado sobre como protegemos su informacion. Su uso continuado del sitio web despues de la publicacion de cambios a esta politica constituye su aceptacion de dichos cambios.</p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="policy-section" id="contacto">
+      <h2><span class="section-num">9</span> Contacto</h2>
+      <p>Si tiene preguntas, comentarios o solicitudes con respecto a esta politica de privacidad, puede contactarnos a traves de los siguientes medios:</p>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="policy-contact-card">
+      <h3>Contactanos</h3>
+      <p>Estamos aqui para resolver cualquier duda sobre tu privacidad y tus datos personales.</p>
+      <div class="contact-links">
+        <a href="mailto:info@onstarter.com" class="contact-link">info@onstarter.com</a>
+        <a href="tel:+17865055398" class="contact-link">+1 (786) 505-5398</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-heading">
+        <h2>Expande los horizontes de tu nuevo negocio</h2>
+      </div>
+      <div class="footer-col">
+        <h5>Conecta</h5>
+        <a href="./">Politica de privacidad</a>
+        <a href="mailto:info@onstarter.com">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="tel:+17865055398">+1 (786) 505-5398</a>
+        <a href="mailto:info@onstarter.com">info@onstarter.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="mailto:info@onstarter.com" class="btn-cta">Contactanos</a>
+      <div class="copyright">&copy; 2026. OnStartUp LLC</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
